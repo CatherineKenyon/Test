@@ -6,7 +6,7 @@ invPhi = 0.618;
 n = 100;
 bestGoods = ones(3,n);
 bestGoods(:,2) = [0.5;1;2];
-
+%trevors change
 for i = 3:n
     frac = (1:i-1)./ones(1,i-1)/i;
     k = 1;
