@@ -29,10 +29,12 @@ end
 z=[];
 t=[];
 frac=[];
+levels=[1,2,3,2];
 for j=5:n
     [path]=Genealogy(bestGoods(2,j),bestGoods(3,j));
     [tlength] = TailLength(path);
     [zig] = zigzag(path); 
+    levels=[levels length(path)+1];
     z=[z zig];
     t=[t tlength];
     h=length(path)-tlength;          
@@ -47,6 +49,5 @@ plot(z,'r-')
 %%
 % plot(1:n, bestGoods(1,:))
  
-%%
-for k=1:n
+
     
